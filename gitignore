@@ -1,0 +1,38 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode project settings
+.vscode/
+
+# Python virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# macOS system files
+.DS_Store
+
+# Data files (if too large)
+*.csv
+*.zip
+*.tar.gz
+
+# Output artifacts
+*.pdf
+*.png
+images/*.pdf
+images/*.png
+
+# Logs and system artifacts
+*.log
+*.out
