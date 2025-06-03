@@ -1,0 +1,32 @@
+# Python 编译缓存
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code 等 IDE 配置文件
+.vscode/
+.idea/
+
+# MacOS 系统文件
+.DS_Store
+
+# 环境文件
+.env
+.venv/
+*.egg-info/
+
+# 数据文件（如果太大不上传）
+*.csv
+*.tar.gz
+*.zip
+
+# 输出文件
+*.pdf
+*.png
+
+# images 文件夹中的图表可手动选择是否上传
+images/*.pdf
+images/*.png
