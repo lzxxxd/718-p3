@@ -1,32 +1,38 @@
-# Python 编译缓存
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
+
+# C extensions
+*.so
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# VS Code 等 IDE 配置文件
+# VSCode project settings
 .vscode/
-.idea/
 
-# MacOS 系统文件
+# Python virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# macOS system files
 .DS_Store
 
-# 环境文件
-.env
-.venv/
-*.egg-info/
-
-# 数据文件（如果太大不上传）
+# Data files (if too large)
 *.csv
-*.tar.gz
 *.zip
+*.tar.gz
 
-# 输出文件
+# Output artifacts
 *.pdf
 *.png
-
-# images 文件夹中的图表可手动选择是否上传
 images/*.pdf
 images/*.png
+
+# Logs and system artifacts
+*.log
+*.out
