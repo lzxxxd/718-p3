@@ -1,3 +1,4 @@
+
 # Climate Change in China: A Decade of Warming? (2011–2020)
 
 > *“History is not the past but a map of the past drawn from a particular point of view to be useful to the modern traveler.”*  
@@ -5,43 +6,48 @@
 
 ## Project Overview
 
-This project is part of the AAE 718 course at the University of Wisconsin–Madison. It examines whether China's surface temperatures have shown a significant warming trend over the period from 2011 to 2020, using data derived from NOAA's ISD-Lite (Integrated Surface Dataset – Lite).
+This project is submitted for AAE 718 at the University of Wisconsin–Madison. It investigates the average air temperature trend in China over the period 2011 to 2020, based on empirical data from NOAA's Integrated Surface Dataset – Lite (ISD-Lite).
 
-The choice of China is not incidental. As one of the largest nations both in territory and emissions, it offers a vast and diverse climate space—ranging from the frozen plateaus of Tibet to the humid subtropics of Guangdong. This diversity enables not only national-level observation but also regional pattern analysis in the future.
+The central inquiry is simple: **Has China warmed over the past decade?**  
+The response is drawn from over 10 million hourly observations across hundreds of weather stations.
 
-The aim is not to forecast, but to **document**, to **observe**, and to **interpret**.
+## Repository Structure
 
-## Research Question
+```
+.
+├── images/
+│   └── china_avg_temp_trend_2011_2020_resized.png
+├── report.md
+├── .gitignore
+└── README.md
+```
 
-> Has China experienced a statistically observable warming trend in national average surface temperature during the 2011–2020 decade?
+## Data
 
-This question is addressed through the aggregation of daily weather station observations into annual national means, followed by trend visualization and interpretation.
+- **Source**: NOAA ISD-Lite Archive  
+- **Scope**: All available Chinese weather stations  
+- **Years Covered**: 2011–2020  
+- **Metric**: Hourly air temperature, aggregated annually  
 
+Due to size, raw `.zip` or `.tar.gz` data files are not included here. Users may download data for reproduction from:  
+🔗 [NOAA ISD-Lite Archive](https://www.ncei.noaa.gov/data/global-summary-of-the-day/archive/)
 
-## Data Source
+## How to Reproduce
 
-- **Source**: National Oceanic and Atmospheric Administration (NOAA)
-- **Dataset**: Integrated Surface Dataset - Lite (ISD-Lite)
-- **Link**: [NOAA ISD-Lite Archive](https://www.ncei.noaa.gov/data/global-summary-of-the-day/archive/)
-- **Time Span**: 2011–2020
-- **Geographic Scope**: Mainland China stations only
+1. Download the annual ISD-Lite datasets from NOAA for 2011–2020.
+2. Extract all `.txt` or `.op` files for Chinese stations into a `data/` folder.
+3. Run the processing script (to be added).
+4. Output figures will be saved to `/images/`.
 
-Due to GitHub file size limits, the raw data files are not included in this repository.  
-They can be accessed and downloaded from the above NOAA archive.
+All analysis is performed in Python using `pandas`, `matplotlib`, and `weasyprint`.
 
-## How to Run
+## Report PDF
 
-All scripts are written in Python 3 using the following packages:
-- `pandas`
-- `matplotlib`
-
-To reproduce the results:
-1. Download ISD-Lite data for China (2011–2020)
-2. Place `.txt` or extracted station files in the `/data` directory
-3. Run the provided notebook or script (coming soon)
+📄 [Click here to view the full report](./aae718_china_temp_report_full.pdf)
 
 ## License
 
-This repository is open for educational use only. Attribution encouraged, distortion discouraged.
+This project is for academic use only. Feel free to reuse with attribution.  
+Forks welcome. Citations preferred. Distortion discouraged.
 
-
+---
