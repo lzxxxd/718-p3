@@ -31,6 +31,8 @@ The response is drawn from over 10 million hourly observations across hundreds o
 
 Due to size, raw `.zip` or `.tar.gz` data files are not included here. Users may download data for reproduction from:  
 🔗 [NOAA ISD-Lite Archive](https://www.ncei.noaa.gov/data/global-summary-of-the-day/archive/)
+Or: https://pan.baidu.com/s/1aGne28oa_UpEEnkvw06f6A?pwd=whqd 提取码: whqd 
+
 
 ## How to Reproduce
 
